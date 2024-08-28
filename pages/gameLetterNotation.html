@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados da página, incluindo charset e viewport para responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Jogo da Memória | Alfabeto Musical</title>
+
+    <!-- Ícone que aparecerá ao lado do título na aba do navegador -->
+    <link rel="icon" href="../images/memoria_musical.png" type="icon">
+    
+    <!-- Links para arquivos de estilos CSS -->
+    <link rel="stylesheet" href="../css/reset.css"> 
+    <link rel="stylesheet" href="../css/gameLetterNotation.css"> 
+    
+    <!-- Link para o script JavaScript -->
+    <script defer src="../js/gameLetterNotation.js"></script> 
+</head>
+<body>
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Tela de fim de jogo -->
+        <div class="end-game" style="display: none;">
+            <div class="end-game-message"></div> 
+            <!-- Botões para reiniciar o jogo ou voltar ao login -->
+            <button class="play-again">Jogar Novamente</button>
+            <button class="login">Voltar ao Login</button>
+            <button class="pageGamesVictory">JOGOS</button>
+        </div>
+    
+        <!-- Cabeçalho da página -->
+        <header>
+            <span class="player"></span> 
+            <span>Tempo: <span class="timer">00</span></span> 
+        </header>
+        
+        <!-- Área onde o jogo será exibido -->
+        <div class="grid"></div>
+        
+        <!-- Botões para navegação e controle do jogo -->
+        <div class="button">
+            <!-- Botões para acessar outras páginas ou reiniciar o jogo -->
+            <button class="login-button loginPage">SAIR</button>
+            <button class="restartButton">REINICIAR</button>
+            <button class="pageGames">JOGOS</button>
+        </div>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Desenvolvido por Talison e Leonardo 2024.</p> 
+        </div>
+    </footer>
+    
+</body>
+</html>

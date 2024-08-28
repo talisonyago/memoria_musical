@@ -1,0 +1,235 @@
+/* Estilo principal da área de conteúdo */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../images/bg.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+    overflow: hidden; 
+    box-sizing: border-box;
+}
+
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2em;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 0 5px;
+    border-radius: 5px;
+}
+
+/* Estilo da tela de fim de jogo */
+.end-game {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 1000;
+}
+
+/* Estilo da mensagem de fim de jogo */
+.end-game-message {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Estilo do botão "Jogar novamente" */
+.play-again {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #71ff76;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.play-again:hover {
+    background-color: #48fc4e;
+}
+
+/* Estilo da grade de cartas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 colunas por padrão */
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo das cartas */
+.card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 5px;
+    background-color: aquamarine;
+    position: relative;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+    transform: rotateY(0);
+}
+
+/* Estilo das faces da carta */
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #00136b;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+/* Estilo da face da frente da carta */
+.front {
+    transform: rotateY(180deg);
+}
+
+/* Estilo da face de trás da carta */
+.back {
+    background-image: url('../images/icon.png');
+}
+
+/* Estilo para cartas reveladas */
+.card.reveal-card {
+    transform: rotateY(180deg);
+}
+
+/* Estilo para cartas desativadas */
+.disabled_card {
+    pointer-events: none;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transform: rotateY(180deg);
+}
+
+/* Estilo do botão de login */
+.login {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #FF6F6F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login:hover {
+    background-color: #ff4b4b;
+}
+
+/* Estilo para botões genéricos */
+.login-button, 
+.restartButton, 
+.pageGames, 
+.pageGamesVictory {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #FF6F6F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login-button:hover, 
+.restartButton:hover, 
+.pageGames:hover, 
+.pageGamesVictory:hover {
+    background-color: #ff4b4b;
+}
+
+/* Estilo do contêiner de botões adicionais */
+.button {
+    display: flex;
+}
+
+/* Estilo para botões na página de login e reinício */
+.loginPage, 
+.restartButton {
+    margin-right: 20px;
+}
+
+/* Responsividade */
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(5, 1fr); /* 5 colunas para telas médias */
+    }
+
+    .card {
+        aspect-ratio: 2/3; 
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 colunas para telas pequenas */
+    }
+
+    .card {
+        aspect-ratio: 2/3; 
+    }
+
+    header {
+        padding: 10px;
+        font-size: 1em; 
+    }
+
+    .end-game-message {
+        font-size: 0.9em; 
+    }
+
+    .play-again, 
+    .login-button, 
+    .restartButton, 
+    .pageGames {
+        font-size: 0.9em; 
+        padding: 8px 16px;
+    }
+
+    .login {
+        padding: 5px 15px;
+        font-size: 0.8em;
+        background-color: #FF6F6F;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .login-button, 
+    .restartButton, 
+    .pageGames, 
+    .pageGamesVictory {
+        padding: 5px 15px;
+        font-size: 0.7em;
+        margin-top: 20px;
+    }
+}

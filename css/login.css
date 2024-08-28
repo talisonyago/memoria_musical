@@ -1,0 +1,349 @@
+/* Estilo global do corpo da página */
+body {
+    margin: 0;
+    background-color: #5cccee;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo do container do card */
+.cardContainer {
+    background-color: #ffffff; /* Cor de fundo do card */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de fundo */
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona margem */
+}
+
+/* Estilo do formulário de login */
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilo do cabeçalho do formulário de login */
+.login_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.login_header img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.login_header h1 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+/* Estilo dos campos de entrada no formulário de login */
+.login_input {
+    border: 2px solid #333;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 15px;
+    max-width: 300px;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Estilo do botão de login */
+.login_button {
+    background-color: #FF6F6F;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    max-width: 300px;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Estilo do botão de login quando desativado */
+.login_button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+/* Estilo do botão Sobre */
+.sobre {
+    padding: 13px;
+    font-size: 0.8em;
+    background-color: #92d2e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+}
+
+.sobre:hover {
+    background-color: #5cccee;
+}
+
+/* Container para garantir que o botão Sobre fique na parte inferior da página */
+.footer_container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* Estilo do card de informações */
+.infoCard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: auto;
+}
+
+/* Estilo do conteúdo do card */
+.cardContent {
+    background-color: #7EC8E3;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80%;
+    position: relative;
+    overflow-y: auto;
+}
+
+/* Adicionar um quadrado acima do título */
+.cardContent::before {
+    content: '';
+    position: absolute;
+    top: -60px; 
+    left: 0;
+    width: 100%;
+    height: 60px; 
+    background-color: #F4A8C1;
+    z-index: -1; 
+}
+
+/* Estilo do título do card */
+.title {
+    position: absolute;
+    top: 0; 
+    left: 28px; 
+    padding-top: 70px; 
+    padding-bottom: 10px; 
+    height: 180px;
+    width: 350px;
+    display: flex;
+    align-items: flex-end;
+    background-color: #F4A8C1;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    margin-bottom: 20px; 
+}
+
+.title h1 {
+    margin-left: 10px;
+}
+
+/* Container para as colunas do card */
+.cardColumns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Coluna do texto */
+.textColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Coluna dos cards */
+.cardsColumn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para ocultar o card */
+.hidden {
+    display: none;
+}
+
+/* Estilo do botão de fechar */
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Container dos cards internos */
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilo dos cards internos */
+.infoCardInner {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.infoCardInner:hover {
+    transform: translateY(-5px);
+}
+
+.infoCardInner .img {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #7EC8E3;
+    z-index: 2;
+}
+
+.infoCardInner h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.infoCardInner h5 {
+    margin-top: 5px;
+    font-size: 0.7em;
+    color: #777;
+}
+
+/* Estilo do parágrafo dentro do card de informações */
+.text p {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    text-align: justify;
+    font-size: 0.9rem;
+    margin: 10px 10px;
+    line-height: 1.6;
+    text-indent: 0;
+}
+
+/* Container para alinhar o label e o input */
+.input_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Estilo do label */
+.login_label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+    color: #333;
+}
+
+/* Estilo do input */
+.login_input {
+    border: 2px solid #333;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1em;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Nova seção colorida dentro do card */
+.coloredSection {
+    background-color: #F4A8C1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35%; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .cardContent {
+        width: 95%;
+        max-width: 500px;
+        padding: 15px;
+    }
+
+    .infoCardInner {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .closeButton {
+        font-size: 1.2em;
+    }
+
+    .cardColumns {
+        flex-direction: column;
+    }
+
+    .textColumn, .cardsColumn {
+        width: 100%;
+        align-items: center;
+    }
+
+    .cardsContainer {
+        justify-content: center;
+    }
+
+    /* Estilo responsivo da div title */
+    .title {
+        position: static; 
+        margin-bottom: 20px; 
+        width: auto; 
+    }
+}

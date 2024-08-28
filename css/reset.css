@@ -1,0 +1,76 @@
+/* Importação da fonte "Press Start 2P" */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Reset e estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Estilo básico para html e body */
+html, body {
+    
+    margin: 0;
+}
+
+/* Estilo principal da página */
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+
+}
+
+/* Estilo do rodapé */
+footer {
+    min-height: 10vh;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-top: auto; 
+}
+
+/* Estilo do conteúdo do rodapé */
+.footer-content p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+/* Estilo dos links no rodapé */
+.footer-content a {
+    color: #add8e6;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: none; 
+    border-radius: 150px;
+}
+
+::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb {
+    background-color:rgba(255, 255, 255, 0.9);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    border: 3px solid transparent; 
+}
+
+

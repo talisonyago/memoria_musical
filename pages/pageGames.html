@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados da página, incluindo charset e viewport para responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Memória Musical | Games</title>
+
+    <!-- Ícone que aparecerá ao lado do título na aba do navegador -->
+    <link rel="icon" href="../images/memoria_musical.png" type="icon">
+    
+    <!-- Links para arquivos de estilos CSS -->
+    <link rel="stylesheet" href="../css/pageGames.css"> 
+    <link rel="stylesheet" href="../css/reset.css">
+    
+    <!-- Link para o script JavaScript -->
+    <script defer src="../js/pageGames.js"></script> 
+</head>
+<body>
+    <!-- Principal conteúdo da página -->
+    <main>
+        <!-- Overlay -->
+        <div id="overlay" class="overlay"></div>
+        <div class="content">
+            <!-- Card para o jogo de memória com partitura -->
+            <div class="card cardPartitura">
+                <h2>Jogo da memória</h2>
+                <h3>Clave de sol</h3> 
+                <img src="../images/memoria_partitura.png" class="imgGamePartitura" alt=""> 
+                <div class="bottomCard">
+                    <!-- Botão para redirecionar para a página do jogo de Clave de Sol -->
+                    <button type="button" class="buttonPartitura" data-page="../pages/game.html">Play</button>
+                    <!-- Botão para abrir o card de dicas -->
+                    <button class="openCardButton" data-target="infoCardPartitura">Mostrar Dicas</button>
+                    <a href="#" class="showHowToPlay comoJogarPartitura">COMO JOGAR</a>
+                </div>
+            </div>
+            <!-- Card para o jogo de memória com alfabeto -->
+            <div class="card cardNotesLyrics">
+                <h2>Jogo da memória</h2>
+                <h3>Alfabeto Musical</h3>
+                <img src="../images/memoria_alfabeto.png" class="imgGameAlfabeto" alt="">
+                <div class="bottomCard">
+                    <!-- Botão para redirecionar para a página do jogo de Alfabeto Musical -->
+                    <button type="button" class="buttonPartitura" data-page="../pages/gameLetterNotation.html">Play</button>
+                    <!-- Botão para abrir o card de dicas -->
+                    <button class="openCardButton" data-target="infoCardAlfabeto">Mostrar Dicas</button>
+                    <a href="#" class="showHowToPlay comoJogarAlfabeto">COMO JOGAR</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card de informações sobre Partitura - Clave de Sol -->
+        <div id="infoCardPartitura" class="infoCard infoCardPartitura">
+            <div class="cardContentTips">
+                <span class="closeButton">&times;</span> 
+                <div class="title"><h2>Partitura - Clave de sol</h2></div>
+                <img src="../images/partituraClaveDeSol.png" alt="" class="partituraClaveDeSol"> 
+            </div>
+        </div>
+
+        <!-- Card de informações sobre Alfabeto Musical -->
+        <div id="infoCardAlfabeto" class="infoCard infoCardAlfabeto">
+            <div class="cardContentTips">
+                <span class="closeButton">&times;</span> 
+                <div class="title"><h2>Alfabeto Musical</h2></div>
+                <img src="../images/alfabetoMusical.png" alt="" class="alfabetoMusical"> 
+            </div>
+        </div>
+
+        <!-- Card de Alfabeto Musical - Como Jogar -->
+        <div id="infoCardAlfabetoHowToPlay" class="infoCard howToPlayCardMA">
+            <div class="cardContent">
+                <span class="closeButton">&times;</span>
+                <div class="titleCard"><h1>Como Jogar <p>Alfabeto Musical</p></h1></div>
+                <p class="description">O jogo da memória de alfabeto musical utiliza cartas com as notas C, D, E, F, G, A e B. Este jogo facilita o aprendizado e a memorização das notas musicais ao proporcionar uma maneira lúdica de associar e lembrar cada nota, essencial para a prática de leitura musical e teoria.</p>
+                <div class="instructions"> 
+                    <h3>Passo a Passo:</h3>
+                    <ol>
+                        <li id="alfabetoStep1"><strong>Passo 1</strong><div class="textLi">Escolha uma carta: clique em qualquer carta para virá-la.</div></li>
+                        <li id="alfabetoStep2"><strong>Passo 2</strong><div class="textLi">Escolha outra carta: clique em uma segunda carta para tentar encontrar um par.</div></li>
+                        <li id="alfabetoStep3"><strong>Passo 3</strong><div class="textLi">Encontre todos os pares: continue clicando até encontrar todos os pares de cartas.</div></li>
+                        <li id="alfabetoStep4"><strong>Passo 4</strong><div class="textLi">Memorização: Ao encontrar duas cartas certas irá tocar uma nota que corresponde às cartas.</div></li>
+                        <li id="alfabetoStep5"><strong>Passo 5</strong><div class="textLi">Tempo e Pontuação: O tempo é contado a partir do primeiro clique e a pontuação é baseada no tempo gasto.</div></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card de Partitura Musical - Como Jogar -->
+        <div id="infoCardPartituraHowToPlay" class="infoCard howToPlayCardMS">
+            <div class="cardContent">
+                <span class="closeButton">&times;</span>
+                <div class="titleCard"><h1>Como Jogar <p>Partitura Musical</p></h1></div>
+                <p class="description">O jogo da memória de partitura musical desafia os jogadores a encontrar pares de notas musicais associadas a diferentes símbolos de partituras. Ele ajuda no estudo ao reforçar o reconhecimento de figuras musicais e a leitura de partituras, melhorando a habilidade de leitura e memória musical.</p>
+                <div class="instructions">
+                    <h3>Passo a Passo:</h3>
+                    <ol>
+                        <li id="partituraStep1"><strong>Passo 1</strong><div class="textLi">Escolha uma carta: clique em qualquer carta para virá-la.</div></li>
+                        <li id="partituraStep2"><strong>Passo 2</strong><div class="textLi">Escolha outra carta: clique em uma segunda carta para tentar encontrar um par.</div></li>
+                        <li id="partituraStep3"><strong>Passo 3</strong><div class="textLi">Encontre todos os pares: continue clicando até encontrar todos os pares de cartas.</div></li>
+                        <li id="partituraStep4"><strong>Passo 4</strong><div class="textLi">Memorização: Ao encontrar duas cartas certas irá tocar uma nota que corresponde às cartas.</div></li>
+                        <li id="partituraStep5"><strong>Passo 5</strong><div class="textLi">Tempo e Pontuação: O tempo é contado a partir do primeiro clique e a pontuação é baseada no tempo gasto.</div></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão para redirecionar para a página de login -->
+        <button class="login-button loginPage">VOLTAR</button>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Desenvolvido por Talison e Leonardo 2024.</p>
+        </div>
+    </footer>
+</body>
+</html>

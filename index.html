@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css"> 
+    <link rel="stylesheet" href="./css/login.css"> 
+    <link rel="icon" href="./images/memoria_musical.png" type="icon">
+    <script defer src="./js/login.js"></script> 
+    <title>Memória Musical | Login</title> 
+</head>
+<body>
+    <main>
+        <div class="container">
+            <!-- Novo card container -->
+            <div class="cardContainer">
+                <form class="login_form">
+                    <div class="login_header">
+                        <img src="./images/memoria_musical.png" alt="memoria musical icon"/> 
+                        <h1>Memória</h1> 
+                        <h1>Musical</h1> 
+                    </div>
+                
+                    <div class="input_container">
+                        <label for="nome" class="login_label">Digite aqui seu nome:</label>
+                        <input type="text" id="nome" placeholder="Nome ou nickname" class="login_input">
+                    </div>
+                
+                    <button type="submit" class="login_button" disabled>Play</button>
+                </form>
+                
+                <div class="footer_container">
+                    <button class="sobre">SOBRE</button>
+                </div>
+            </div>
+
+            <!-- Card de Informações -->
+            <div id="infoCardSobre" class="infoCard hidden">
+                <div class="cardContent">
+                    <span class="closeButton">&times;</span> 
+                    <div class="cardColumns">
+                        <div class="textColumn">
+                            <div class="title"><h1>Sobre</h1></div>
+                            <div class="text"><p>Este projeto é o resultado do nosso trabalho final para a conclusão do curso de Tecnologia de Sistemas para Internet no Instituto Federal de Brasília - Campus Brasília, com orientação da professora Kadidja Oliveira.</p></div>
+                        </div>
+                        <div class="cardsColumn">
+                            <div class="cardsContainer">
+                                <div class="infoCardInner">
+                                    <div class="coloredSection"></div>
+                                    <img src="./images/talisonyago.jpeg" alt="" class="img">
+                                    <h2>Talison Yago</h2>
+                                    <h5>FRONT-END</h5>
+                                </div>
+                                <div class="infoCardInner">
+                                    <div class="coloredSection"></div>
+                                    <img src="./images/leonardosilva.jpg" alt="" class="img">
+                                    <h2>Leonardo Silva</h2>
+                                    <h5>FULL-STACK</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Desenvolvido por Talison e Leonardo 2024.</p> 
+        </div>
+    </footer>
+</body>
+
+</html>
