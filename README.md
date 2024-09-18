@@ -82,6 +82,8 @@ Para mais informações, você pode entrar em contato com os desenvolvedores:
 - **Talison Yago** - talisons35@gmail.com
 - **Leonardo** - leonardosantos1752@gmail.com
 
+- Para acessar nossa apresentação clique no link: https://www.canva.com/design/DAGPKm9jabk/soacQ7ybT9mWrqz6il95DA/view?utm_content=DAGPKm9jabk&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
 Muito obrigado!
 
 
